@@ -1,0 +1,83 @@
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+I (31) boot: ESP-IDF v5.2.2 2nd stage bootloader
+I (31) boot: compile time Sep 19 2024 14:40:12
+I (31) boot: Multicore bootloader
+I (35) boot: chip revision: v3.0
+I (39) boot.esp32: SPI Speed      : 40MHz
+I (44) boot.esp32: SPI Mode       : DIO
+I (48) boot.esp32: SPI Flash Size : 2MB
+I (53) boot: Enabling RNG early entropy source...
+I (58) boot: Partition Table:
+I (62) boot: ## Label            Usage          Type ST Offset   Length
+I (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000 
+I (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000 
+I (84) boot:  2 factory          factory app      00 00 00010000 00100000 
+I (92) boot: End of partition table
+I (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ef34h (126772) map
+I (148) esp_image: segment 1: paddr=0002ef5c vaddr=3ffb0000 size=010bch (  4284) load
+I (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=81194h (528788) map
+I (335) esp_image: segment 3: paddr=000b11bc vaddr=3ffb10bc size=02a98h ( 10904) load
+I (339) esp_image: segment 4: paddr=000b3c5c vaddr=40080000 size=16830h ( 92208) load
+I (388) boot: Loaded app from partition at offset 0x10000
+I (388) boot: Disabling RNG early entropy source...
+I (399) cpu_start: Multicore app
+I (408) cpu_start: Pro cpu start user code
+I (408) cpu_start: cpu freq: 160000000 Hz
+I (408) cpu_start: Application information:
+I (411) cpu_start: Project name:     ESP32_ESP-IDF_WiFi-AP
+I (417) cpu_start: App version:      1
+I (422) cpu_start: Compile time:     Sep 19 2024 14:51:00
+I (428) cpu_start: ELF file SHA256:  668fe64db...
+I (433) cpu_start: ESP-IDF:          v5.2.2
+I (438) cpu_start: Min chip rev:     v0.0
+I (443) cpu_start: Max chip rev:     v3.99
+I (448) cpu_start: Chip rev:         v3.0
+I (453) heap_init: Initializing. RAM available for dynamic allocation:    
+I (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (466) heap_init: At 3FFB7C18 len 000283E8 (160 KiB): DRAM
+I (472) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (478) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (485) heap_init: At 40096830 len 000097D0 (37 KiB): IRAM
+I (492) spi_flash: detected chip: generic
+I (496) spi_flash: flash io: dio
+W (499) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+I (513) main_task: Started on CPU0
+I (523) main_task: Calling app_main()
+I (573) wifi softAP: ESP_WIFI_MODE_AP
+I (583) wifi:wifi driver task: 3ffbfccc, prio:23, stack:6656, core=0      
+I (603) wifi:wifi firmware version: 3e0076f
+I (603) wifi:wifi certification version: v7.0
+I (603) wifi:config NVS flash: enabled
+I (603) wifi:config nano formating: disabled
+I (613) wifi:Init data frame dynamic rx buffer num: 32
+I (613) wifi:Init static rx mgmt buffer num: 5
+I (623) wifi:Init management short buffer num: 32
+I (623) wifi:Init dynamic tx buffer num: 32
+I (633) wifi:Init static rx buffer size: 1600
+I (633) wifi:Init static rx buffer num: 10
+I (633) wifi:Init dynamic rx buffer num: 32
+I (643) wifi_init: rx ba win: 6
+I (643) wifi_init: tcpip mbox: 32
+I (643) wifi_init: udp mbox: 6
+I (653) wifi_init: tcp mbox: 6
+I (653) wifi_init: tcp tx win: 5760
+I (663) wifi_init: tcp rx win: 5760
+I (663) wifi_init: tcp mss: 1440
+I (663) wifi_init: WiFi IRAM OP enabled
+I (673) wifi_init: WiFi RX IRAM OP enabled
+I (683) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06
+I (763) wifi:mode : softAP (94:b5:55:f8:2d:6d)
+I (883) wifi:Total power save buffer number: 16
+I (883) wifi:Init max length of beacon: 752/752
+I (883) wifi:Init max length of beacon: 752/752
+I (893) wifi softAP: wifi_init_softap finished. SSID:myssid018 password:12345678 channel:1
+I (893) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (903) main_task: Returned from app_main()
+I (17243) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+I (17253) wifi:station: 0a:e1:c5:e9:49:61 join, AID=1, bgn, 20
+I (17283) wifi softAP: station 0a:e1:c5:e9:49:61 join, AID=1
+I (17513) wifi:<ba-add>idx:2 (ifx:1, 0a:e1:c5:e9:49:61), tid:0, ssn:2, winSize:64
+I (17513) wifi:<ba-add>idx:3 (ifx:1, 0a:e1:c5:e9:49:61), tid:1, ssn:0, winSize:64
+I (18523) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
